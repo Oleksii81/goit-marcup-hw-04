@@ -103,9 +103,20 @@ img {
 .hero {
     padding-top: 188px;
     padding-bottom: 188px;
-    background-color: var(--brand-color);
+    /*background-color: var(--brand-color);*/
     text-align: center;
 }
+.overlay {
+    max-width: 1440px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),
+    url(../images/bcgrnd/people-office.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}    
 .hero-head {
     max-width: 496px;
     margin-top: 0;
@@ -164,8 +175,29 @@ img {
 .strengths-item {
     width: calc((100% - 72px) / 4);
 }
+.strengths-item::before {
+    display: block;
+    content: '';
+    height: 112px;
+    border-radius: 4px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: var(--background-color-gray);
+}
+.strengths-item:nth-child(1)::before {
+    background-image: url(../images/bcgrnd/anten.svg);
+}
+.strengths-item:nth-child(2)::before {
+    background-image: url(../images/bcgrnd/clock.svg);
+}
+.strengths-item:nth-child(3)::before {
+    background-image: url(../images/bcgrnd/diagram.svg);
+}
+.strengths-item:nth-child(4)::before {
+    background-image: url(../images/bcgrnd/astronaut.svg);
+}
 .strengths-head {
-    margin-top: 0;
+    margin-top: 8px;
     margin-bottom: 8px;
     font-weight: 500;
         font-size: 20px;
@@ -250,6 +282,9 @@ img {
     padding: 100px 0;
     background-color: var(--brand-color);
 }
+.footer-con {
+    display: flex;
+}
 .logo-footer {
     display: inline-block;
     margin-bottom: 16px;
@@ -261,9 +296,86 @@ img {
         max-width: 264px;
         height: 72px;
         margin: 0;
-    font-size: 16px;
+        font-size: 16px;
         line-height: 1.5;
         color: var(--footer-text-color);
+}
+.soc-media {
+    margin-left: 120px;
+}
+.social-media {
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 16px;
+    margin-left: 0;
+
+    font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #FFFFFF;
+}
+.smm {
+    display: flex;
+}
+.smm-item:not(:last-child) {
+    margin-right: 16px;
+}
+.insta {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/instagram.svg);
+    background-color: var(--logo-web-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.insta:hover, .insta:focus {
+    background-color: #31D0AA;
+}
+.faceb {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/facebook.svg);
+    background-color: var(--logo-web-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.faceb:hover,
+.faceb:focus {
+    background-color: #31D0AA;
+}
+.twiter {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/twiter.svg);
+    background-color: var(--logo-web-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.twiter:hover,
+.twiter:focus {
+    background-color: #31D0AA;
+}
+.linkin {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-image: url(../images/linkedin.svg);
+    background-color: var(--logo-web-color);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+.linkin:hover,
+.linkin:focus {
+    background-color: #31D0AA;
 }
 /* Portfolio */
 .portfolio {
