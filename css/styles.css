@@ -179,6 +179,19 @@ img {
 .strengths-item {
     width: calc((100% - 72px) / 4);
 }
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 112px;
+    background-color: var(--footer-text-color);
+    border-radius: 4px;
+    margin-bottom: 8px;
+}
+.strs-icon {
+    width: 64px;
+    height: 64px;
+}
 /*.strengths-item::before {
     display: block;
     content: '';
@@ -273,14 +286,41 @@ img {
         color: var(--brand-color);
 }
 .profession {
-    margin: 0;
+    margin: 0 0 8px 0;
     font-size: 16px;
         line-height: 1.5;
         text-align: center;
         letter-spacing: 0.02em;
 }
 .team-discr {
-    padding: 32px 16px;
+    padding: 32px 0px;
+}
+.contact-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.sn-link {
+    width: 40px;
+    height: 40px;
+}
+.snl {
+    width: 100%;
+    height: 100%;
+    background-color: var(--logo-web-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.snl:hover,
+.snl:focus {
+    background-color: var(--nav-color);
+}
+.snl-icon {
+    width: 16px;
+    height: 16px;
+    fill: var(--background-color-gray);
 }
 .customers {
     padding-top: 120px;
@@ -308,7 +348,7 @@ img {
 }
 .customers-link {
     width: 100%;
-    height: 100;
+    height: 100%;
     border: 1px solid var(--icon-color);
     border-radius: 4px;
     display: flex;
@@ -320,6 +360,11 @@ img {
 .customers-link:focus {
     border-color: var(--nav-color);
     color: var(--nav-color);
+}
+.customers-icon {
+    width: 104px;
+    height: 56px;
+    fill: currentColor;
 }
 .footer {
     padding: 100px 0;
@@ -347,9 +392,6 @@ img {
         line-height: 1.5;
         color: var(--footer-text-color);
 }
-/*.soc-media {
-    margin-left: 120px;
-}*/
 .social-media {
     margin-top: 0;
     margin-right: 0;
@@ -367,64 +409,6 @@ img {
     display: flex;
     gap: 16px;
 }
-/*.smm-item:not(:last-child) {
-    margin-right: 16px;
-}
-.insta {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-image: url(../images/instagram.svg);
-    background-color: var(--logo-web-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-.insta:hover, .insta:focus {
-    background-color: #31D0AA;
-}
-.faceb {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-image: url(../images/facebook.svg);
-    background-color: var(--logo-web-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-.faceb:hover,
-.faceb:focus {
-    background-color: #31D0AA;
-}
-.twiter {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-image: url(../images/twiter.svg);
-    background-color: var(--logo-web-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-.twiter:hover,
-.twiter:focus {
-    background-color: #31D0AA;
-}
-.linkin {
-    display: inline-block;
-    height: 40px;
-    width: 40px;
-    background-image: url(../images/linkedin.svg);
-    background-color: var(--logo-web-color);
-    background-repeat: no-repeat;
-    background-position: center;
-    border-radius: 50%;
-}
-.linkin:hover,
-.linkin:focus {
-    background-color: #31D0AA;
-}*/
 /* Portfolio */
 .portfolio {
     padding: 96px 0 120px;
