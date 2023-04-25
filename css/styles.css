@@ -409,6 +409,10 @@ img {
     display: flex;
     gap: 16px;
 }
+.snl-footer-icon {
+    width: 24px;
+    height: 24px;
+}
 /* Portfolio */
 .portfolio {
     padding: 96px 0 120px;
