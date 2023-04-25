@@ -188,10 +188,6 @@ img {
     border-radius: 4px;
     margin-bottom: 8px;
 }
-.strs-icon {
-    width: 64px;
-    height: 64px;
-}
 /*.strengths-item::before {
     display: block;
     content: '';
@@ -318,8 +314,6 @@ img {
     background-color: var(--nav-color);
 }
 .snl-icon {
-    width: 16px;
-    height: 16px;
     fill: var(--background-color-gray);
 }
 .customers {
@@ -362,8 +356,6 @@ img {
     color: var(--nav-color);
 }
 .customers-icon {
-    width: 104px;
-    height: 56px;
     fill: currentColor;
 }
 .footer {
@@ -409,9 +401,21 @@ img {
     display: flex;
     gap: 16px;
 }
+.snl-footer {
+    width: 100%;
+    height: 100%;
+    background-color: var(--logo-web-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .snl-footer-icon {
-    width: 24px;
-    height: 24px;
+    fill: var(--footer-text-color);
+}
+.snl-footer:hover,
+.snl-footer:focus {
+    background-color: #31d0aa;
 }
 /* Portfolio */
 .portfolio {
