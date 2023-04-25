@@ -352,7 +352,7 @@ img {
 }
 .customers-link:hover,
 .customers-link:focus {
-    border-color: var(--nav-color);
+    border-color: var(--nav-color); 
     color: var(--nav-color);
 }
 .customers-icon {
