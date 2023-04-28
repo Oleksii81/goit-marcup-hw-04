@@ -50,7 +50,7 @@ img {
 }
 .header-nav {
     display: flex;
-    gap: 40px
+    gap: 40px;
 }
 .link {
     text-decoration: none;
